@@ -1,6 +1,6 @@
 #!/bin/bash
 
-main=`docker-compose  version  --short | cut -d '.' -f 1`
+main=`docker-compose  version  --short | cut -d '.' -f 1 | tr -d v`
 minor=`docker-compose  version  --short | cut -d '.' -f 2`
 current=`docker-compose  version  --short`
 
